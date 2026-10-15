@@ -13,7 +13,7 @@ process WGET {
 
 process TREE {
     publishDir "results"
-    container 'evolbioinfo/ubuntu:v24.04'
+    container 'evolbioinfo/gotree:v0.4.1a'
 
     input:
     path newick
