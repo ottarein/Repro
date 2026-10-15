@@ -28,5 +28,6 @@ process TREE {
 }
 
 workflow {
-    TREE(WGET()).out.splitCsv().view()
-}
+    TREE(WGET())
+    TREE.out.splitCsv(sep: '\t', header: true).view()
+    }
