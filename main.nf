@@ -28,5 +28,5 @@ process TREE {
 }
 
 workflow {
-    TREE(WGET())
+    TREE(WGET()).view()
 }
