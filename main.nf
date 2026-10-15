@@ -28,6 +28,5 @@ process TREE {
 }
 
 workflow {
-    archive = WGET()
-    TREE(archive.out)
+    TREE(WGET())
 }
